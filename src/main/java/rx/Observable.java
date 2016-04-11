@@ -609,7 +609,7 @@ public class Observable<T> {
      */
     @SuppressWarnings("unchecked")
     public static <T1, T2, R> Observable<R> combineLatest(Observable<? extends T1> o1, Observable<? extends T2> o2, Func2<? super T1, ? super T2, ? extends R> combineFunction) {
-        return combineLatest(Arrays.asList(o1, o2), Functions.fromFunc(combineFunction));
+        return (Observable<R>)combineLatest(Arrays.asList(o1, o2), Functions.fromFunc(combineFunction));
     }
 
     /**
@@ -637,7 +637,7 @@ public class Observable<T> {
      */
     @SuppressWarnings("unchecked")
     public static <T1, T2, T3, R> Observable<R> combineLatest(Observable<? extends T1> o1, Observable<? extends T2> o2, Observable<? extends T3> o3, Func3<? super T1, ? super T2, ? super T3, ? extends R> combineFunction) {
-        return combineLatest(Arrays.asList(o1, o2, o3), Functions.fromFunc(combineFunction));
+        return (Observable<R>)combineLatest(Arrays.asList(o1, o2, o3), Functions.fromFunc(combineFunction));
     }
 
     /**
@@ -668,7 +668,7 @@ public class Observable<T> {
     @SuppressWarnings("unchecked")
     public static <T1, T2, T3, T4, R> Observable<R> combineLatest(Observable<? extends T1> o1, Observable<? extends T2> o2, Observable<? extends T3> o3, Observable<? extends T4> o4,
             Func4<? super T1, ? super T2, ? super T3, ? super T4, ? extends R> combineFunction) {
-        return combineLatest(Arrays.asList(o1, o2, o3, o4), Functions.fromFunc(combineFunction));
+        return (Observable<R>)combineLatest(Arrays.asList(o1, o2, o3, o4), Functions.fromFunc(combineFunction));
     }
 
     /**
@@ -701,7 +701,7 @@ public class Observable<T> {
     @SuppressWarnings("unchecked")
     public static <T1, T2, T3, T4, T5, R> Observable<R> combineLatest(Observable<? extends T1> o1, Observable<? extends T2> o2, Observable<? extends T3> o3, Observable<? extends T4> o4, Observable<? extends T5> o5,
             Func5<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? extends R> combineFunction) {
-        return combineLatest(Arrays.asList(o1, o2, o3, o4, o5), Functions.fromFunc(combineFunction));
+        return (Observable<R>)combineLatest(Arrays.asList(o1, o2, o3, o4, o5), Functions.fromFunc(combineFunction));
     }
 
     /**
@@ -736,7 +736,7 @@ public class Observable<T> {
     @SuppressWarnings("unchecked")
     public static <T1, T2, T3, T4, T5, T6, R> Observable<R> combineLatest(Observable<? extends T1> o1, Observable<? extends T2> o2, Observable<? extends T3> o3, Observable<? extends T4> o4, Observable<? extends T5> o5, Observable<? extends T6> o6,
             Func6<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? extends R> combineFunction) {
-        return combineLatest(Arrays.asList(o1, o2, o3, o4, o5, o6), Functions.fromFunc(combineFunction));
+        return (Observable<R>)combineLatest(Arrays.asList(o1, o2, o3, o4, o5, o6), Functions.fromFunc(combineFunction));
     }
 
     /**
@@ -773,7 +773,7 @@ public class Observable<T> {
     @SuppressWarnings("unchecked")
     public static <T1, T2, T3, T4, T5, T6, T7, R> Observable<R> combineLatest(Observable<? extends T1> o1, Observable<? extends T2> o2, Observable<? extends T3> o3, Observable<? extends T4> o4, Observable<? extends T5> o5, Observable<? extends T6> o6, Observable<? extends T7> o7,
             Func7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? extends R> combineFunction) {
-        return combineLatest(Arrays.asList(o1, o2, o3, o4, o5, o6, o7), Functions.fromFunc(combineFunction));
+        return (Observable<R>)combineLatest(Arrays.asList(o1, o2, o3, o4, o5, o6, o7), Functions.fromFunc(combineFunction));
     }
 
     /**
@@ -812,7 +812,7 @@ public class Observable<T> {
     @SuppressWarnings("unchecked")
     public static <T1, T2, T3, T4, T5, T6, T7, T8, R> Observable<R> combineLatest(Observable<? extends T1> o1, Observable<? extends T2> o2, Observable<? extends T3> o3, Observable<? extends T4> o4, Observable<? extends T5> o5, Observable<? extends T6> o6, Observable<? extends T7> o7, Observable<? extends T8> o8,
             Func8<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? extends R> combineFunction) {
-        return combineLatest(Arrays.asList(o1, o2, o3, o4, o5, o6, o7, o8), Functions.fromFunc(combineFunction));
+        return (Observable<R>)combineLatest(Arrays.asList(o1, o2, o3, o4, o5, o6, o7, o8), Functions.fromFunc(combineFunction));
     }
 
     /**
@@ -854,7 +854,7 @@ public class Observable<T> {
     public static <T1, T2, T3, T4, T5, T6, T7, T8, T9, R> Observable<R> combineLatest(Observable<? extends T1> o1, Observable<? extends T2> o2, Observable<? extends T3> o3, Observable<? extends T4> o4, Observable<? extends T5> o5, Observable<? extends T6> o6, Observable<? extends T7> o7, Observable<? extends T8> o8,
             Observable<? extends T9> o9,
             Func9<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super T7, ? super T8, ? super T9, ? extends R> combineFunction) {
-        return combineLatest(Arrays.asList(o1, o2, o3, o4, o5, o6, o7, o8, o9), Functions.fromFunc(combineFunction));
+        return (Observable<R>)combineLatest(Arrays.asList(o1, o2, o3, o4, o5, o6, o7, o8, o9), Functions.fromFunc(combineFunction));
     }
     /**
      * Combines a list of source Observables by emitting an item that aggregates the latest values of each of
@@ -1330,7 +1330,7 @@ public class Observable<T> {
      * @see <a href="http://reactivex.io/documentation/operators/from.html">ReactiveX operators documentation: From</a>
      */
     public static <T> Observable<T> from(Future<? extends T> future) {
-        return create(OnSubscribeToObservableFuture.toObservableFuture(future));
+        return (Observable<T>)create(OnSubscribeToObservableFuture.toObservableFuture(future));
     }
 
     /**
@@ -1361,7 +1361,7 @@ public class Observable<T> {
      * @see <a href="http://reactivex.io/documentation/operators/from.html">ReactiveX operators documentation: From</a>
      */
     public static <T> Observable<T> from(Future<? extends T> future, long timeout, TimeUnit unit) {
-        return create(OnSubscribeToObservableFuture.toObservableFuture(future, timeout, unit));
+        return (Observable<T>)create(OnSubscribeToObservableFuture.toObservableFuture(future, timeout, unit));
     }
 
     /**
@@ -1390,7 +1390,8 @@ public class Observable<T> {
      */
     public static <T> Observable<T> from(Future<? extends T> future, Scheduler scheduler) {
         // TODO in a future revision the Scheduler will become important because we'll start polling instead of blocking on the Future
-        return create(OnSubscribeToObservableFuture.toObservableFuture(future)).subscribeOn(scheduler);
+        Observable<T> o = (Observable<T>)create(OnSubscribeToObservableFuture.toObservableFuture(future));
+        return o.subscribeOn(scheduler);
     }
 
     /**
@@ -1463,7 +1464,7 @@ public class Observable<T> {
      * @see #defer(Func0)
      * @since (if this graduates from Experimental/Beta to supported, replace this parenthetical with the release number)
      */
-    @Experimental
+    @Beta
     public static <T> Observable<T> fromCallable(Callable<? extends T> func) {
         return create(new OnSubscribeFromCallable<T>(func));
     }
@@ -5352,7 +5353,41 @@ public class Observable<T> {
         if (capacityHint < 1) {
             throw new IllegalArgumentException("capacityHint > 0 required but it was " + capacityHint);
         }
-        return lift(new OperatorEagerConcatMap<T, R>(mapper, capacityHint));
+        return lift(new OperatorEagerConcatMap<T, R>(mapper, capacityHint, Integer.MAX_VALUE));
+    }
+
+    /**
+     * Maps a sequence of values into Observables and concatenates these Observables eagerly into a single
+     * Observable.
+     * <p>
+     * Eager concatenation means that once a subscriber subscribes, this operator subscribes to all of the
+     * source Observables. The operator buffers the values emitted by these Observables and then drains them in
+     * order, each one after the previous one completes.
+     * <dl>
+     *  <dt><b>Backpressure:</b></dt>
+     *  <dd>Backpressure is honored towards the downstream, however, due to the eagerness requirement, sources
+     *      are subscribed to in unbounded mode and their values are queued up in an unbounded buffer.</dd>
+     *  <dt><b>Scheduler:</b></dt>
+     *  <dd>This method does not operate by default on a particular {@link Scheduler}.</dd>
+     * </dl>
+     * @param <R> the value type
+     * @param mapper the function that maps a sequence of values into a sequence of Observables that will be
+     *               eagerly concatenated
+     * @param capacityHint hints about the number of expected source sequence values
+     * @param maxConcurrent the maximum number of concurrent subscribed observables
+     * @return
+     * @warn javadoc fails to describe the return value
+     * @since (if this graduates from Experimental/Beta to supported, replace this parenthetical with the release number)
+     */
+    @Experimental
+    public final <R> Observable<R> concatMapEager(Func1<? super T, ? extends Observable<? extends R>> mapper, int capacityHint, int maxConcurrent) {
+        if (capacityHint < 1) {
+            throw new IllegalArgumentException("capacityHint > 0 required but it was " + capacityHint);
+        }
+        if (maxConcurrent < 1) {
+            throw new IllegalArgumentException("maxConcurrent > 0 required but it was " + capacityHint);
+        }
+        return lift(new OperatorEagerConcatMap<T, R>(mapper, capacityHint, maxConcurrent));
     }
     
     /**
@@ -5834,7 +5869,7 @@ public class Observable<T> {
      */
     public final <U, R> Observable<R> flatMapIterable(Func1<? super T, ? extends Iterable<? extends U>> collectionSelector,
             Func2<? super T, ? super U, ? extends R> resultSelector) {
-        return flatMap(OperatorMapPair.convertSelector(collectionSelector), resultSelector);
+        return (Observable<R>)flatMap(OperatorMapPair.convertSelector(collectionSelector), resultSelector);
     }
 
     /**
@@ -5870,7 +5905,7 @@ public class Observable<T> {
     @Beta
     public final <U, R> Observable<R> flatMapIterable(Func1<? super T, ? extends Iterable<? extends U>> collectionSelector,
             Func2<? super T, ? super U, ? extends R> resultSelector, int maxConcurrent) {
-        return flatMap(OperatorMapPair.convertSelector(collectionSelector), resultSelector, maxConcurrent);
+        return (Observable<R>)flatMap(OperatorMapPair.convertSelector(collectionSelector), resultSelector, maxConcurrent);
     }
 
     /**
@@ -6655,7 +6690,7 @@ public class Observable<T> {
      * @see <a href="http://reactivex.io/documentation/operators/catch.html">ReactiveX operators documentation: Catch</a>
      */
     public final Observable<T> onErrorResumeNext(final Observable<? extends T> resumeSequence) {
-        return lift(OperatorOnErrorResumeNextViaFunction.withOther(resumeSequence));
+        return lift((Operator<T, T>)OperatorOnErrorResumeNextViaFunction.withOther(resumeSequence));
     }
 
     /**
@@ -6685,7 +6720,7 @@ public class Observable<T> {
      * @see <a href="http://reactivex.io/documentation/operators/catch.html">ReactiveX operators documentation: Catch</a>
      */
     public final Observable<T> onErrorReturn(Func1<Throwable, ? extends T> resumeFunction) {
-        return lift(OperatorOnErrorResumeNextViaFunction.withSingle(resumeFunction));
+        return lift((Operator<T, T>)OperatorOnErrorResumeNextViaFunction.withSingle(resumeFunction));
     }
 
     /**
@@ -6721,7 +6756,7 @@ public class Observable<T> {
      * @see <a href="http://reactivex.io/documentation/operators/catch.html">ReactiveX operators documentation: Catch</a>
      */
     public final Observable<T> onExceptionResumeNext(final Observable<? extends T> resumeSequence) {
-        return lift(OperatorOnErrorResumeNextViaFunction.withException(resumeSequence));
+        return lift((Operator<T, T>)OperatorOnErrorResumeNextViaFunction.withException(resumeSequence));
     }
 
     /**
@@ -10564,7 +10599,7 @@ public class Observable<T> {
      * @see <a href="http://reactivex.io/documentation/operators/zip.html">ReactiveX operators documentation: Zip</a>
      */
     public final <T2, R> Observable<R> zipWith(Observable<? extends T2> other, Func2<? super T, ? super T2, ? extends R> zipFunction) {
-        return zip(this, other, zipFunction);
+        return (Observable<R>)zip(this, other, zipFunction);
     }
 
     /**
